@@ -18,7 +18,7 @@ This lab involves leveraging the NBA API to comprehensively analyze and evaluate
 - REB: 1 missing value
 - PLUS_MINUS: 1122 missing values
 
-On further analysis of the data, Using conditional formatting > Highlight cells by rules > Duplicate values, duplicate entries on GAME_ID 1520800001 were found and removed. This also handled the missing data in columns FG_PCT, FT_PCT, REB.
+On further analysis of the data, Using conditional formatting > Highlight cells by rules > Duplicate values, duplicate entries on GAME_ID 1520800001 were found and removed. This also handled the missing data in columns FG_PCT, FT_PCT, and REB.
 
 FG3A: 1 missing value
 the FG3A (three-point field goals attempted) column could be an important factor, especially for Scoring Efficiency. I believe there is no way the team did not attempt three-point shots, So I decided to fill the missing values with the median of the FG3A column which is 18. The median is often a better choice than the mean for filling in missing values, as it is less sensitive to outliers and skewed data.
