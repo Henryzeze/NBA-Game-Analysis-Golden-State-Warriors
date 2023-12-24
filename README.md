@@ -18,15 +18,39 @@ This lab involves leveraging the NBA API to comprehensively analyze and evaluate
 - REB: 1 missing value
 - PLUS_MINUS: 1122 missing values
 
-On further analysis of the data, Using conditional formatting > Highlight cells by rules > Duplicate values, duplicate entries on GAME_ID 1520800001 were found and removed. This also handled the missing data in columns FG_PCT, FT_PCT, and REB.
+  On further analysis of the data, Using conditional formatting > Highlight cells by rules > Duplicate values, duplicate entries on GAME_ID 1520800001 were found and removed. This also handled the missing data in columns FG_PCT, FT_PCT, and REB.
+  
+  FG3A: 1 missing value
+  The FG3A column, representing attempted three-point field goals, has a connection with the FG3M column, which denotes successful three-point field goals made. In cases where 2 successful three-point field goals were made but the corresponding FG3A value is missing, I opted to fill these missing values by utilizing the median of the FG3A column where the FG3M value is 2. This median value, calculated to be 8, was used to address the missing FG3A values associated with 2 successful three-point shots made. The median is often a better choice than the mean for filling in missing values, as it is less sensitive to outliers and skewed data.
+  
+  ORED and DREB: 2 missing values:
+  The columns OREB (Offensive Rebounds) and DREB (Defensive Rebounds) hold significant importance, particularly in evaluating Rebounding and Defensive Performance. Additionally, the REB (Total Rebounds) column represents the sum of Offensive and Defensive Rebounds. To address missing values, I chose to use the median values of OREB and DREB where the corresponding REB values were 47 and 33, respectively, ensuring a more comprehensive dataset for analysis.
+  
+  FG3_PCT: 24 missing values
+  The FG3_PCT signifies the Three-Point Field Goal Percentage, determined by dividing successful three-point shots made (FG3M) by attempted three-point shots (FG3A). To handle the 24 missing values in FG3_PCT, I computed the FG3M/FG3A ratio. In cases where both FG3M (successful three-point shots made) and FG3A (attempted three-point shots) were registered as 0 in the respective entries with missing FG3_PCT values, I assigned a value of 0 to maintain consistency in the calculation.
+  
+  Finally, I decided to leave the missing values in PLUS_MINUS columns as they will be dropped during visualization in Microsoft Power BI.
 
-FG3A: 1 missing value
-the FG3A (three-point field goals attempted) column could be an important factor, especially for Scoring Efficiency. I believe there is no way the team did not attempt three-point shots, So I decided to fill the missing values with the median of the FG3A column which is 18. The median is often a better choice than the mean for filling in missing values, as it is less sensitive to outliers and skewed data.
 
-ORED and DREB: 2 missing values:
-the OREB (Offensive Rebounds) and DREB (Defensive Rebounds) columns are crucial, especially for Rebounding and Defensive Performance. It is highly unlikely that a team does not make any rebounds in a basketball game. So I filled the missing values with the median of the OREB and DREB columns which is 12 and 31 respectively. The median is often a better choice than the mean for filling in missing values, as it is less sensitive to outliers and skewed data.
+4. **ANALYZE**: Analysis was made using Microsoft Power BI, and the following insights can be deduced from the visualization below.
 
-Finally, I decided to leave the missing values in the FG3_PCT and PLUS_MINUS columns as they will be dropped during visualization in Microsoft Power BI.
+![](NBA GSW Power BI.JPG)
 
-4. **Analyze**: The tool used for visualization was Microsoft Power BI and the following KPIs were visualized and Analyzed.
+- The team has won approximately 1776 games and lost the rest.
+- On average, they play for about 240 minutes per game.
+- They score an average of 106 points per game.
+- They make about 40 field goals per game out of an average of 86 attempts, with a field goal percentage of about 46%.
+- They make about 7 three-point field goals per game out of an average of 19 attempts, with a three-point field goal percentage of about 33%.
+- They make about 19 free throws per game out of an average of 25 attempts, with a free throw percentage of about 75%.
+- They get an average of 12 offensive rebounds, 30 defensive rebounds, and 43 total rebounds per game.
+- They make an average of 23 assists, 8 steals, 5 blocks, and 15 turnovers per game.
+- They commit an average of 22 personal fouls per game.
+- The average plus-minus statistic is about 0.48, which means they score about 0.48 points more than their opponents per game on average.
+
+Based on these insights, here are some recommendations:
+
+- Improve three-point shooting: The team's three-point field goal percentage is lower than their overall field goal percentage. Improving their three-point shooting could help them score more points.
+- Reduce turnovers: The team averages 15 turnovers per game. Reducing turnovers could help them maintain possession and create more scoring opportunities.
+- Improve free throw shooting: The team's free throw percentage is 75%, which is lower than their field goal percentage. Improving their free throw shooting could help them score more points.
+- Improve defensive rebounds: The team gets more offensive rebounds than defensive rebounds. Improving their defensive rebounding could help them prevent their opponents from getting second-chance points.
 
