@@ -59,3 +59,19 @@ Based on these insights, here are some recommendations:
 - Improve free throw shooting: The team's free throw percentage is 75%, which is lower than their field goal percentage. Improving their free throw shooting could help them score more points.
 - Improve defensive rebounds: The team gets more offensive rebounds than defensive rebounds. Improving their defensive rebounding could help them prevent their opponents from getting second-chance points.
 
+## How to Use
+
+To replicate this analysis or conduct further assessments:
+
+- Run the Code: Execute the provided code that interacts with the NBA API to retrieve game data and analyze the Golden State Warriors' performance.
+- Export Data: Utilize the exported dataframe to delve deeper into performance metrics like Winning Percentage, Scoring Efficiency, Defensive Stats, Ball Handling, Rebounding, Assists, Steals, and Blocks using Microsoft Power BI.
+
+## Project Details
+
+- **Data Source**: NBA API
+- **Objective**: Analyze Golden State Warriors' game performance to determine winning or losing margins and export data for extensive analysis in Microsoft Power BI.
+- **Metrics of Interest**: Winning Percentage, Scoring Efficiency, Defensive Performance, Ball Handling, Rebounding, Assists, Steals, and Blocks.
+
+## Additional Notes
+
+This project streamlines access to NBA game statistics via the API, facilitating in-depth analysis of the Golden State Warriors' performance. The exported dataframe enables further exploration and visualization of various performance metrics in Microsoft Power BI for a comprehensive assessment.
