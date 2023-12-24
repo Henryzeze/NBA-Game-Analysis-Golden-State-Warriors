@@ -5,6 +5,11 @@
 ### Project Overview
 This lab involves leveraging the NBA API to comprehensively analyze and evaluate the performance of the Golden State Warriors. The primary aim is to ascertain the winning or losing margin of the Golden State Warriors in each game. Additionally, the project includes exporting the obtained data as a csv file for further analysis and visualization in Microsoft Power BI. The key performance metrics to be explored include Winning Percentage, Scoring Efficiency, Defensive Performance, Ball Handling, Rebounding, Assists, Steals, and Blocks.
 
+## Tools Used
+1. Python (For API calls)
+2. Microsoft Excel (For Data Transformation)
+3. Microsoft Power BI (For Data Profiling and Visualization)
+
 ## Methodology
 1. **ASK**: I need to understand the data before conducting meaningful analysis. So I had to do an extensive study on the NBA game and ask/research every question to fully understand what key metrics was needed for my analysis. 
 2. **PREPARE**: After that, I connected to the NBA API using a Python script to get the necessary data.
@@ -34,7 +39,7 @@ This lab involves leveraging the NBA API to comprehensively analyze and evaluate
 
 4. **ANALYZE**: Analysis was made using Microsoft Power BI, and the following insights can be deduced from the visualization below.
 
-![](NBA GSW Power BI.JPG)
+![](NBA-GSW-Power-BI.jpg)
 
 - The team has won approximately 1776 games and lost the rest.
 - On average, they play for about 240 minutes per game.
